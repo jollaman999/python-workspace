@@ -43,3 +43,26 @@ print(a, b, c, sep='\n')
 print(a, end=' ')
 print(b, end=' ')
 print(c, end=' ')
+
+'''
+변수입력과 연산자
+'''
+# a=input("슷자를 입력하세요 : ")
+# print(a)
+a, b = input("숫자를 입력하세요 : ").split()
+print(a+b) # 문자형으로 나옴
+a=int(a)
+b=int(b)
+print(a+b) # 정수형으로 나옴
+a, b = map(int, input("숫자를 입력하세요 : ").split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b) # 몫
+print(a%b) # 나머지
+print(a**b) # 거듭제곱
+a=4.3
+b=5
+c=a+b
+print(c, type(c))

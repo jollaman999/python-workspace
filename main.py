@@ -49,12 +49,12 @@ print(c, end=' ')
 '''
 # a=input("슷자를 입력하세요 : ")
 # print(a)
-a, b = input("숫자를 입력하세요 : ").split()
+# a, b = input("숫자를 입력하세요 : ").split()
 print(a+b) # 문자형으로 나옴
 a=int(a)
 b=int(b)
 print(a+b) # 정수형으로 나옴
-a, b = map(int, input("숫자를 입력하세요 : ").split())
+# a, b = map(int, input("숫자를 입력하세요 : ").split())
 print(a+b)
 print(a-b)
 print(a*b)
@@ -66,3 +66,47 @@ a=4.3
 b=5
 c=a+b
 print(c, type(c))
+
+'''
+조건문 if(분기, 중첩)
+'''
+x=5
+if x!=7:
+   print("Lucky")
+   print("ㅋㅋ")
+
+x=12
+if x>= 10:
+    if x%2==1:
+        print("10이상의 홀수")
+
+x=9
+if x>0:
+    if x<10:
+        print("10보다 작은 자연수")
+
+x=7
+if x>0 and x<10:
+    print("10보다 작은 자연수")
+
+x=7
+if 0<x<10:
+    print("10보다 작은 자연수")
+
+x=-3
+if x>0:
+    print("양수")
+else:
+    print("음수")
+
+x=50
+if x>=90:
+    print("A")
+elif x>=80:
+    print("B")
+elif x>=70:
+    print("C")
+elif x>=60:
+    print("D")
+else:
+    print("F")
